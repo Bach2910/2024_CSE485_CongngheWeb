@@ -81,7 +81,7 @@ Aptech Global. Phát triển nghề nghiệp sinh viên IT như một lập trì
 quốc tế.',
             'tuition' => '15.000.000 VND',
             'start_date' => '2/2/24',
-            'duration' => '2 - 2.5 năm'
+            'time' => '2 - 2.5 năm'
         ],
         [
             "image"=>"s2.png",
@@ -91,7 +91,7 @@ Aptech Global. Phát triển nghề nghiệp sinh viên IT như một lập trì
 quốc tế.',
             'tuition' => 'giảm 15% học phí',
             'start_date' => '2/2/24',
-            'duration' => '2 - 2.5 năm'
+            'time' => '2 - 2.5 năm'
         ],
         [
             "image"=>"s1.png",
@@ -101,7 +101,7 @@ Aptech Global. Phát triển nghề nghiệp sinh viên IT như một lập trì
 quốc tế.',
             'tuition' => 'ưu đãi giảm 15% học phí',
             'start_date' => '2/2/24',
-            'duration' => '2 - 2.5 năm'
+            'time' => '2 - 2.5 năm'
         ],
         [
             "image"=>"s2.png",
@@ -111,7 +111,7 @@ Aptech Global. Phát triển nghề nghiệp sinh viên IT như một lập trì
 quốc tế.',
             'tuition' => '9.000.000 VND',
             'start_date' => '2/2/24',
-            'duration' => '2 - 2.5 năm'
+            'time' => '2 - 2.5 năm'
         ],
         [
             "image"=>"s1.png",
@@ -121,7 +121,7 @@ Aptech Global. Phát triển nghề nghiệp sinh viên IT như một lập trì
 quốc tế.',
             'tuition' => '15.000.000 VND',
             'start_date' => '2/2/24',
-            'duration' => '2 - 2.5 năm'
+            'time' => '2 - 2.5 năm'
         ],
         [
             "image"=>"s2.png",
@@ -131,7 +131,7 @@ Aptech Global. Phát triển nghề nghiệp sinh viên IT như một lập trì
 quốc tế.',
             'tuition' => '15.000.000 VND',
             'start_date' => '2/2/24',
-            'duration' => '2 - 2.5 năm'
+            'time' => '2 - 2.5 năm'
         ],
 
         // Thêm các khóa học khác
@@ -144,12 +144,11 @@ quốc tế.',
         echo '<p class="desc">' . $course['description'] . '</p>';
         echo ' <p><i class="fa-solid fa-gift icon"></i>Học phí: ' . $course['tuition'] . '</p>';
         echo '<p><i class="fa-solid fa-clock icon"></i>Khải giảng: ' . $course['start_date'] . '</p>';
-        echo '<p><i class="fa-solid fa-bookmark icon"></i>Thời lượng: ' . $course['duration'] . '</p>';
+        echo '<p><i class="fa-solid fa-bookmark icon"></i>Thời lượng: ' . $course['time'] . '</p>';
         echo '</div>';
     }
     ?>
 </div>
-
 </body>
 
 </html>
