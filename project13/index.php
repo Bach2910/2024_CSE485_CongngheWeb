@@ -15,29 +15,30 @@
             box-sizing: border-box;
         }
 
-        .courses {
+        .courseAll {
             display: flex;
             flex-wrap: wrap;
         }
 
         .course {
             width: 30%;
-            background-color: #f9f9f9;
-            margin-bottom: 20px;
-            margin-left: 16px;
-            margin-right: 16px;
+            background-color: white;
+            margin-bottom: 30px;
+            margin-left: 15px;
+            margin-right: 15px;
         }
 
         .course h2 {
-            color: #333;
+            color: dimgray;
             font-weight: bold;
             margin-top: 8px;
             margin-bottom: 16px;
             padding-left: 8px;
+
         }
 
         .course p {
-            color: #666;
+            color: gray;
             margin-bottom: 16px;
             padding-left: 8px;
         }
@@ -46,9 +47,10 @@
             margin-right: 4px;
         }
 
-        .main-title {
-            padding-left: 4px;
-            border-left: 5px red solid;
+        .title {
+            margin-left: 5px;
+            padding-left: 7px;
+            border-left: 4px red solid;
             color: red;
             margin-bottom: 16px;
         }
@@ -56,79 +58,91 @@
         .course img {
             width: 100%;
         }
+
+        h3{
+            font-family: "Segoe UI Light";
+        }
     </style>
 </head>
 
 <body>
-<h1 class="main-title">
+<h3 class="title">
     Khóa học sắp khai giảng
-</h1>
-<div class="courses">
+</h3>
+<div class="courseAll">
     <?php
     // Dữ liệu khóa học lưu động trong mảng
-    $courses = [
+    $courseAll = [
         [
-            "image" =>"https://cdn.tuoitre.vn/thumb_w/480/2021/7/10/screen-shot-2021-07-10-at-114922-1625892571909294221772.png",
+            "image" =>"s1.png",
             'title' => 'Học viên quốc tế',
             'description' => 'Chương trình đào tạo chính thức tại Việt Nam từ
 Aptech Global. Phát triển nghề nghiệp sinh viên IT như một lập trình viên
 quốc tế.',
-            'fee' => '15.000.000 VND',
+            'tuition' => '15.000.000 VND',
             'start_date' => '2/2/24',
             'duration' => '2 - 2.5 năm'
         ],
         [
-            "image"=>"https://cdn.tuoitre.vn/thumb_w/480/2021/7/10/screen-shot-2021-07-10-at-114922-1625892571909294221772.png",
+            "image"=>"s2.png",
             'title' => 'Lập trình viên Web Fullstack',
-            'description' => 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi nostrum ipsam mollitia! Vel, iusto ipsam. Delectus nisi quod, quaerat sed quasi recusandae, dolore odit beatae excepturi at, rerum iste aspernatur!.',
-            'fee' => '15.000.000 VND',
+            'description' => 'Chương trình đào tạo chính thức tại Việt Nam từ
+Aptech Global. Phát triển nghề nghiệp sinh viên IT như một lập trình viên
+quốc tế.',
+            'tuition' => 'giảm 15% học phí',
             'start_date' => '2/2/24',
             'duration' => '2 - 2.5 năm'
         ],
         [
-            "image"=>"https://cdn.tuoitre.vn/thumb_w/480/2021/7/10/screen-shot-2021-07-10-at-114922-1625892571909294221772.png",
+            "image"=>"s1.png",
             'title' => 'Lập trình viên Java',
-            'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam repudiandae minima consequatur, temporibus minus alias tenetur quaerat voluptatibus. Sequi animi quae enim consequuntur ipsam numquam saepe voluptatem iusto impedit vel.',
-            'fee' => '15.000.000 VND',
+            'description' => 'Chương trình đào tạo chính thức tại Việt Nam từ
+Aptech Global. Phát triển nghề nghiệp sinh viên IT như một lập trình viên
+quốc tế.',
+            'tuition' => 'ưu đãi giảm 15% học phí',
             'start_date' => '2/2/24',
             'duration' => '2 - 2.5 năm'
         ],
         [
-            "image"=>"https://cdn.tuoitre.vn/thumb_w/480/2021/7/10/screen-shot-2021-07-10-at-114922-1625892571909294221772.png",
+            "image"=>"s2.png",
             'title' => 'Lập trình viên Front-end',
-            'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam repudiandae minima consequatur, temporibus minus alias tenetur quaerat voluptatibus. Sequi animi quae enim consequuntur ipsam numquam saepe voluptatem iusto impedit vel.',
-            'fee' => '15.000.000 VND',
+            'description' => 'Chương trình đào tạo chính thức tại Việt Nam từ
+Aptech Global. Phát triển nghề nghiệp sinh viên IT như một lập trình viên
+quốc tế.',
+            'tuition' => '9.000.000 VND',
             'start_date' => '2/2/24',
             'duration' => '2 - 2.5 năm'
         ],
         [
-            "image"=>"https://cdn.tuoitre.vn/thumb_w/480/2021/7/10/screen-shot-2021-07-10-at-114922-1625892571909294221772.png",
+            "image"=>"s1.png",
             'title' => 'Lập trình viên Back-end',
-            'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam repudiandae minima consequatur, temporibus minus alias tenetur quaerat voluptatibus. Sequi animi quae enim consequuntur ipsam numquam saepe voluptatem iusto impedit vel.',
-            'fee' => '15.000.000 VND',
+            'description' => 'Chương trình đào tạo chính thức tại Việt Nam từ
+Aptech Global. Phát triển nghề nghiệp sinh viên IT như một lập trình viên
+quốc tế.',
+            'tuition' => '15.000.000 VND',
             'start_date' => '2/2/24',
             'duration' => '2 - 2.5 năm'
         ],
         [
-            "image"=>"https://cdn.tuoitre.vn/thumb_w/480/2021/7/10/screen-shot-2021-07-10-at-114922-1625892571909294221772.png",
+            "image"=>"s2.png",
             'title' => 'Data Engineer',
             'description' => 'Chương trình đào tạo chính thức tại Việt Nam từ
 Aptech Global. Phát triển nghề nghiệp sinh viên IT như một lập trình viên
 quốc tế.',
-            'fee' => '15.000.000 VND',
+            'tuition' => '15.000.000 VND',
             'start_date' => '2/2/24',
             'duration' => '2 - 2.5 năm'
         ],
 
-        // Thêm các khóa học khác vào đây
+        // Thêm các khóa học khác
     ];
     // Hiển thị danh sách khóa học
-    foreach ($courses as $course) {
+    foreach ($courseAll as $course) {
         echo '<div class="course">';
         echo '<img src="' . $course['image'] .'" />';
-        echo '<h2 class="title">' . $course['title'] . '</h2>';
+        echo '<h2 class="title2">' . $course['title'] . '</h2>';
         echo '<p class="desc">' . $course['description'] . '</p>';
-        echo ' <p><i class="fa-solid fa-gift icon"></i>Học phí: ' . $course['fee'] . '</p>';
+        echo ' <p><i class="fa-solid fa-gift icon"></i>Học phí: ' . $course['tuition'] . '</p>';
         echo '<p><i class="fa-solid fa-clock icon"></i>Khải giảng: ' . $course['start_date'] . '</p>';
         echo '<p><i class="fa-solid fa-bookmark icon"></i>Thời lượng: ' . $course['duration'] . '</p>';
         echo '</div>';
