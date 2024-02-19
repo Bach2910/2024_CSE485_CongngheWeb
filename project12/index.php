@@ -45,7 +45,7 @@
         .item:hover {
             background-color: deepskyblue;
         }
-        .subitems { /* cha*/
+        .subitems {
             position: absolute;
             top: 100%;
             left: 0;
@@ -55,20 +55,21 @@
         }
 
         .subitems> .list_small {
-            background-color: cadetblue;
+            background-color: cornflowerblue;
             padding: 4px 7px;
             color: #fff;
             border-top: 1px solid darkslateblue;
             /*border-radius: 5px;*/
         }
-
-
-        .item:hover>.subitems, .list_small:hover {
+        .item:hover>.subitems, .list_small {
             display: block;
+            /*transition: 0.4s;*/
         }
 
         .icon {
+            padding-right: 10px;
             border: none
+
         }
     </style>
 </head>
@@ -93,7 +94,7 @@ $navItems = [
 ];
 
 echo '<nav><ul>';
-echo "<li class='item icon'>
+echo "<li class=' icon'>
     <i class='fa-solid fa-house'></i>
     </li>";
 foreach ($navItems as $item) {
