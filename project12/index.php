@@ -24,50 +24,47 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: dodgerblue;
-            padding: 0 8px;
+            background-color: darkblue;
+            padding: 0 7px;
+
         }
 
         li {
             list-style: none;
-            color: #fff;
+            color: white;
             cursor: pointer;
+            font-family: "Segoe UI";
         }
 
         .item {
-            border-left: 1px solid #fff;
-            text-transform: uppercase;
+            border-left: 1px solid white;
             position: relative;
             padding: 8px;
+            transition: 0.4s;
         }
-
-        .subitems {
+        .item:hover {
+            background-color: deepskyblue;
+        }
+        .subitems { /* cha*/
             position: absolute;
             top: 100%;
             left: 0;
-            width: fit-content;
+            width: 180px;
             display: none;
+
         }
 
-        .subitems>.sub-item {
+        .subitems> .list_small {
             background-color: cadetblue;
-            padding: 4px 8px;
+            padding: 4px 7px;
             color: #fff;
-            border-top: 1px solid #eee;
-            /* display: none; */
+            border-top: 1px solid darkslateblue;
+            /*border-radius: 5px;*/
         }
 
-        .item:hover {
-            background-color: cyan;
-        }
 
-        .item:hover>.subitems,
-        .subitems:hover,
-        .sub-item:hover {
-            /* visibility: true;
-             */
+        .item:hover>.subitems, .list_small:hover {
             display: block;
-            transition: 0.4s;
         }
 
         .icon {
@@ -78,17 +75,17 @@
 
 <body>
 <?php
-$eduItems = [
-    "Tuyển sinh đại học",
-    "Tuyển sinh thạc sĩ",
-    "Tuyển sinh tiến sĩ"
+$list_item = [
+    "Đại học chính quy",
+    "Vừa học vừa làm",
+    "tiến sĩ"
 ];
 $navItems = [
-    ["title"=> "GIỚI THIỆU","subitems"=>[] ],
-    ["title"=> "TIN TỨC & THÔNG BÁO","subitems"=>[]],
-    ["title"=> "TUYỂN SINH","subitems"=>$eduItems],
-    ["title"=> "ĐÀO TẠO","subitems"=>[]],
-    ["title"=> "NGHIÊN CỨU","subitems"=>[]],
+    ["title"=> "GIỚI THIỆU","subitems"=>$list_item],
+    ["title"=> "TIN TỨC & THÔNG BÁO","subitems"=>$list_item],
+    ["title"=> "TUYỂN SINH","subitems"=>$list_item],
+    ["title"=> "ĐÀO TẠO","subitems"=>$list_item],
+    ["title"=> "NGHIÊN CỨU","subitems"=>$list_item],
     ["title"=> "ĐỐI NGOẠI","subitems"=>[]],
     ["title"=> "VĂN BẢN","subitems"=>[]],
     ["title"=> "SINH VIÊN","subitems"=>[]],
@@ -102,7 +99,7 @@ echo "<li class='item icon'>
 foreach ($navItems as $item) {
     echo "<li class='item'>{$item['title']} <ul class='subitems'>";
     foreach ($item['subitems'] as $subitem) {
-        echo "<li class='sub-item'>$subitem</li>";
+        echo "<li class='list_small'>$subitem</li>";
     }
     echo "</ul> </li>";
 }
@@ -110,5 +107,4 @@ echo '</ul></nav>';
 ?>
 
 </body>
-
 </html>
