@@ -43,13 +43,13 @@ li{
     display: none;
 }
 
-.list {
+.listsmall {
     background-color: cornflowerblue;
     padding: 4px 7px;
     color: #fff;
     border-top: 1px solid #ffffff;
 }
 
-.item:hover>.subitems, .list {
+.item:hover>.subitems, .listsmall {
     display: block;
 }

@@ -17,7 +17,7 @@ $listItems = [
 ];
 
 $navItems = [
-    ["title"=> "GIỚI THIỆU","subitems"=>[]],
+    ["title"=> "GIỚI THIỆU","subitems"=>$listItems],
     ["title"=> "TIN TỨC & THÔNG BÁO","subitems"=>$listItems],
     ["title"=> "TUYỂN SINH","subitems"=>[]],
     ["title"=> "ĐÀO TẠO","subitems"=>[]],
@@ -25,7 +25,7 @@ $navItems = [
     ["title"=> "ĐỐI NGOẠI","subitems"=>[]],
     ["title"=> "VĂN BẢN","subitems"=>[]],
     ["title"=> "SINH VIÊN","subitems"=>[]],
-    ["title"=> "LIÊN HỆ","subitems"=>[]]
+    ["title"=> "LIÊN HỆ","subitems"=>$listItems]
 ];
 echo '<nav><ul>';
 echo "<li>
@@ -34,7 +34,7 @@ echo "<li>
 foreach ($navItems as $item) {
     echo "<li class='item'> {$item['title']} <ul class='subitems'>";
     foreach ($item['subitems'] as $subitem) {
-        echo "<li class='list'>$subitem</li>";
+        echo "<li class='listsmall'>$subitem</li>";
     }
     echo "</ul> </li>";
 }
