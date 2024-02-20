@@ -32,9 +32,9 @@ echo "<li>
     <i class='fa-solid fa-house'></i>
     </li>";
 foreach ($navItems as $item) {
-    echo "<li class='item'> {$item['title']} <ul class='subitems'>";
+    echo "<li class='item'> ".$item['title']." <ul class='subitems'>";
     foreach ($item['subitems'] as $subitem) {
-        echo "<li class='listsmall'>$subitem</li>";
+        echo "<li class='listsmall'> $subitem </li>";
     }
     echo "</ul> </li>";
 }
