@@ -6,66 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/1ce18db8ca.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
     <title>Danh sách khóa học</title>
-    <style>
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        .courseAll {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .course {
-            width: 30%;
-            /*height: 400px;*/
-            background-color: white;
-            margin-bottom: 30px;
-            margin-left: 15px;
-            margin-right: 15px;
-        }
-        .course img{
-            width: 100%;
-        }
-        .course h2 {
-            color: gray;
-            font-weight: bold;
-            margin-top: 8px;
-            margin-bottom: 16px;
-            padding-left: 8px;
-
-        }
-
-        .course p {
-            color: gray;
-            margin-bottom: 16px;
-            padding-left: 8px;
-        }
-
-        .icon {
-            margin-right: 4px;
-        }
-
-        .title {
-            margin-left: 5px;
-            padding-left: 7px;
-            border-left: 4px red solid;
-            color: red;
-            margin-bottom: 16px;
-        }
-
-        .course img {
-            width: 100%;
-        }
-
-        h3,h2 {
-            font-family: "Segoe UI Light";
-        }
-    </style>
 </head>
 
 <body>

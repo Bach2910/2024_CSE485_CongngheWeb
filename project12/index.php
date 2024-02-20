@@ -5,32 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/1ce18db8ca.js" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="index.css">
     <title>Document</title>
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
 
-        ul {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: darkblue;
-            padding: 8px;
-        }
-
-        li {
-            list-style: none;
-            border-left: 1px solid white;
-            text-transform: uppercase;
-            padding: 0 8px;
-            color: white;
-            cursor: pointer;
-        }
-    </style>
 </head>
 
 <body>
