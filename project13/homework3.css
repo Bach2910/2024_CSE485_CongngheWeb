@@ -1,0 +1,27 @@
+/* Thêm các định kiểu CSS của bạn ở đây */
+.course-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.course {
+    width: calc(30% - 20px); /* Để hiển thị 3 khóa học trên mỗi dòng */
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.course h2 {
+    color: #333;
+}
+.course p {
+    color: #666;
+}
+
+@media screen and (max-width: 900px) {
+    .course {
+        width: calc(45% - 20px); /* Để hiển thị 2 khóa học trên mỗi dòng trên màn hình nhỏ */
+    }
+}
+.img {
+    width: 200%;
+}

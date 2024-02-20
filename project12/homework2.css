@@ -1,0 +1,65 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    position: fixed;
+    top: 30px;
+    left: 0;
+    right: 0;
+}
+
+nav>ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkblue;
+    padding: 0 7px;
+
+}
+
+li {
+    list-style: none;
+    color: white;
+    cursor: pointer;
+    font-family: "Segoe UI";
+}
+
+.item {
+    border-left: 1px solid white;
+    position: relative;
+    padding: 8px;
+    transition: 0.4s;
+}
+.item:hover {
+    background-color: deepskyblue;
+}
+.subitems {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 180px;
+    display: none;
+
+}
+
+.subitems> .list_small {
+    background-color: cornflowerblue;
+    padding: 4px 7px;
+    color: #fff;
+    border-top: 1px solid darkslateblue;
+    /*border-radius: 5px;*/
+}
+.item:hover>.subitems, .list_small {
+    display: block;
+    /*transition: 0.4s;*/
+}
+
+.icon {
+    padding-right: 10px;
+    border: none
+
+}
