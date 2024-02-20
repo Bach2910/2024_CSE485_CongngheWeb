@@ -12,17 +12,12 @@
 
 <body>
 <?php
-$list_item = [
-    "Đại học chính quy",
-    "Vừa học vừa làm",
-    "tiến sĩ"
-];
 $navItems = [
-    ["title"=> "GIỚI THIỆU","subitems"=>$list_item],
-    ["title"=> "TIN TỨC & THÔNG BÁO","subitems"=>$list_item],
-    ["title"=> "TUYỂN SINH","subitems"=>$list_item],
-    ["title"=> "ĐÀO TẠO","subitems"=>$list_item],
-    ["title"=> "NGHIÊN CỨU","subitems"=>$list_item],
+    ["title"=> "GIỚI THIỆU","subitems"=>[]],
+    ["title"=> "TIN TỨC & THÔNG BÁO","subitems"=>[]],
+    ["title"=> "TUYỂN SINH","subitems"=>[]],
+    ["title"=> "ĐÀO TẠO","subitems"=>[]],
+    ["title"=> "NGHIÊN CỨU","subitems"=>[]],
     ["title"=> "ĐỐI NGOẠI","subitems"=>[]],
     ["title"=> "VĂN BẢN","subitems"=>[]],
     ["title"=> "SINH VIÊN","subitems"=>[]],
