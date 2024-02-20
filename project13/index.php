@@ -3,12 +3,12 @@
 <html lang="en">
 
 <head>
-    <script src="https://kit.fontawesome.com/1ce18db8ca.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1ce18db8ca.js" crossorigin="anonymous"></script>
     <title>Danh sách khóa học</title>
     <style>
-        /* Thêm các định kiểu CSS của bạn ở đây */
+
         * {
             margin: 0;
             padding: 0;
@@ -22,14 +22,17 @@
 
         .course {
             width: 30%;
+            /*height: 400px;*/
             background-color: white;
             margin-bottom: 30px;
             margin-left: 15px;
             margin-right: 15px;
         }
-
+        .course img{
+            width: 100%;
+        }
         .course h2 {
-            color: dimgray;
+            color: gray;
             font-weight: bold;
             margin-top: 8px;
             margin-bottom: 16px;
@@ -59,19 +62,20 @@
             width: 100%;
         }
 
-        h3{
+        h3,h2 {
             font-family: "Segoe UI Light";
         }
     </style>
 </head>
 
 <body>
+
 <h3 class="title">
     Khóa học sắp khai giảng
 </h3>
 <div class="courseAll">
     <?php
-    // Dữ liệu khóa học lưu động trong mảng
+
     $courseAll = [
         [
             "image" =>"s1.png",
@@ -134,14 +138,13 @@ quốc tế.',
             'time' => '2 - 2.5 năm'
         ],
 
-        // Thêm các khóa học khác
     ];
     // Hiển thị danh sách khóa học
     foreach ($courseAll as $course) {
         echo '<div class="course">';
         echo '<img src="' . $course['image'] .'" />';
-        echo '<h2 class="title2">' . $course['title'] . '</h2>';
-        echo '<p class="desc">' . $course['description'] . '</p>';
+        echo '<h2>' . $course['title'] . '</h2>';
+        echo '<p>' . $course['description'] . '</p>';
         echo ' <p><i class="fa-solid fa-gift icon"></i>Học phí: ' . $course['tuition'] . '</p>';
         echo '<p><i class="fa-solid fa-clock icon"></i>Khải giảng: ' . $course['start_date'] . '</p>';
         echo '<p><i class="fa-solid fa-bookmark icon"></i>Thời lượng: ' . $course['time'] . '</p>';
