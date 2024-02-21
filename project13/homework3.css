@@ -4,6 +4,21 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
+nav {
+    position: fixed;
+    top: 30px;
+    left: 0;
+    right: 0;
+}
+
+nav>ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkblue;
+    padding: 0 7px;
+
+}
 .course {
     width: calc(30% - 20px); /* Để hiển thị 3 khóa học trên mỗi dòng */
     background-color: #f9f9f9;
@@ -27,4 +42,7 @@
 }
 h1{
     color:red;
+}
+p{
+    font-family: "Arial";
 }
