@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="homework3.css" />
+    <link rel="stylesheet" type="text/css" href="homework3.css"/>
     <title>Danh sách khóa học</title>
 </head>
 <body>
@@ -13,7 +13,8 @@
     <?php
     // Dữ liệu khóa học lưu động trong mảng
     $courses = [
-        [   "image" => "image/picture1.png",
+        [
+            "image" => "image/picture1.png",
             'title' => 'LẬP TRÌNH VIÊN QUỐC TẾ',
             'description' => 'Chương trình đào tạo chính thức tại Việt Nam từ Aptech Global. Phát triển nghề nghiệp sinh viên IT như một lập trình viên quốc tế.',
             'fee' => 'Học Bổng : 15.000.000 VND',
