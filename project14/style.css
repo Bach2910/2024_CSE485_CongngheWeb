@@ -1,0 +1,42 @@
+.container{
+    width: 35%;
+    height: 100%;
+    margin-left: 35%;
+    padding: 10px;
+    border: 10px gainsboro solid;
+
+}
+label{
+    font-weight: bold;
+}
+.blog1{
+    display: grid;
+    grid-template-columns: 150px auto;
+    margin-top: 10px;
+}
+.k1{
+   margin: 0 10px 0 150px ;
+}
+
+.checkbox{
+
+    margin-top: 10px;
+}
+.checkbox1{
+    margin-left: 107px;
+}
+.checkbox22{
+    margin-left: 55px;
+}
+.button{
+    color: white;
+    background: black;
+}
+.submitt{
+    display: inline-flex;
+    margin: -20px 20px 0 0;
+
+    float: right;
+    max-width: 100px;
+    height: 30%;
+}
