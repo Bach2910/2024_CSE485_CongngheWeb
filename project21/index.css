@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 5px;
+    text-align: center;
+}
+
+p{
+    padding: 5px;
+}
+
+.pagination{
+    padding-top: 15px;
+}
+
+a{
+    padding: 0 0 0 5px;
+}
+/*.product{
+    margin-top: 50px;
+    text-align: center;
+}*/
+
+

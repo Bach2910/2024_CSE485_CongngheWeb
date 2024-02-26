@@ -68,7 +68,7 @@
 
     foreach ($courseAll as $course) {
         echo '<div class="course">';
-        echo '<img src="' .$course['image'].'" />';
+        echo '<img src="'.$course['image'].'" />';
         echo '<h3 class="title2">' . $course['title'] . '</h3>';
         echo '<p class="desc">' . $course['description'] . '</p>';
         echo '<p><i class="fa-solid fa-gift icon"></i> Học phí: ' . $course['fee'] . '</p>';
