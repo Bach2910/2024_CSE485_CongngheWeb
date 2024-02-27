@@ -1,1 +1,0 @@
-Đây là bài tập của project23 thực hiện về việc code bằng ngôn ngữ PHP có sự kết hợp với các ngôn ngữ css và html để tạo ra được 1 giao diện đăng nhập . Khi đăng nhập thành công thì sẽ kiểm tra xem tài khoản này tồn tại không. Nếu tồn tại tài khoản thì sẽ hiện ra trang hiển thị ra tên và email. Nếu không tồn tại tài khoản thì sẽ báo là tài khoản user này không có
