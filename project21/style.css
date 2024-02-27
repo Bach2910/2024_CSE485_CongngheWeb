@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+}
+.product-list .product{
+    width: 20%;
+
+}
+.product img{
+    width: 50%;
+    height: 200px;
+ }
+.name{
+    font-weight: bold;
+}
+i{
+    cursor: pointer;
+}
+a{
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
