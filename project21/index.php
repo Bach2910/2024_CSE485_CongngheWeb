@@ -32,16 +32,16 @@
         [
             'img'=>'img/k2.jpg',
             'id'=>5,
-            'name'=>"T-shirt",
+            'name'=>"Jean",
             'price'=>300000,
-            'description'=>"A comfortable and stylish T-shirt"
+            'description'=>"A comfortable and stylish Jean"
         ],
         [
             'img'=>'img/k3.jpg',
             'id'=>6,
-            'name'=>"T-shirt",
+            'name'=>"Jacket",
             'price'=>300000,
-            'description'=>"A comfortable and stylish T-shirt"
+            'description'=>"A comfortable and stylish Jacket"
         ],
         [
             'img'=>'img/k1.jpg',
@@ -53,9 +53,9 @@
         [
             'img'=>'img/k2.jpg',
             'id'=>8,
-            'name'=>"T-shirt",
+            'name'=>"Jean",
             'price'=>300000,
-            'description'=>"A comfortable and stylish T-shirt"
+            'description'=>"A comfortable and stylish Jean"
         ],
         [
             'img'=>'img/k3.jpg',
